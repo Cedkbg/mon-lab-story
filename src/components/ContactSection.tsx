@@ -19,19 +19,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contact@monportfolio.com',
-      href: 'mailto:contact@monportfolio.com'
+      value: 'cedkbg07@gmail.com',
+      href: 'mailto:cedkbg07@gmail.com'
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      value: '+1 (514) 123-4567',
-      href: 'tel:+15141234567'
+      value: '+243 821 126-963',
+      href: 'tel:+243821126963'
     },
     {
       icon: MapPin,
       title: 'Localisation',
-      value: 'Montreal, Quebec',
+      value: 'Rdc, Kinshasa',
       href: '#'
     }
   ];

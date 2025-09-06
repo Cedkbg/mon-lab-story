@@ -8,7 +8,7 @@ const ProjectsSection = () => {
     {
       title: 'Plateforme E-commerce',
       description: 'Application complète de commerce électronique avec gestion des commandes, paiements sécurisés et tableau de bord administrateur.',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       image: '/api/placeholder/400/250',
       githubUrl: '#',
       liveUrl: '#',
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
     {
       title: 'Application de Gestion de Projets',
       description: 'Outil collaboratif pour la gestion de projets avec suivi du temps, assignation de tâches et reporting avancé.',
-      technologies: ['Vue.js', 'Django', 'MongoDB', 'Redis', 'Docker'],
+      technologies: ['Vue.js', 'Django', 'MongoDB'],
       image: '/api/placeholder/400/250',
       githubUrl: '#',
       liveUrl: '#',
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
     {
       title: 'API de Géolocalisation',
       description: 'Service REST API pour la géolocalisation avec intégration de cartes interactives et recherche avancée.',
-      technologies: ['FastAPI', 'Python', 'PostGIS', 'Redis', 'Kubernetes'],
+      technologies: ['Python', 'Django', 'Redis', 'Kubernetes'],
       image: '/api/placeholder/400/250',
       githubUrl: '#',
       liveUrl: '#',

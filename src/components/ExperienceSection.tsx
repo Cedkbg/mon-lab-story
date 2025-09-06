@@ -6,27 +6,27 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: 'Ingénieur Logiciel Senior',
-      company: 'Tech Solutions Inc.',
-      location: 'Montreal, QC',
-      period: '2022 - Présent',
-      description: 'Développement et maintenance d\'applications web complexes utilisant React, Node.js et PostgreSQL. Leadership technique d\'une équipe de 4 développeurs.',
-      technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS', 'Docker']
+      company: 'Atlentech Dynamics.',
+      location: 'Kinshasa',
+      period: '2025 - Présent',
+      description: 'Développement et maintenance d\'applications web complexes utilisant React, Node.js et PostgreSQL. Leadership technique d\'une équipe de 12 développeurs.',
+      technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL','C++']
     },
     {
       title: 'Développeur Full-Stack',
-      company: 'Startup Innovante',
-      location: 'Quebec, QC',
-      period: '2020 - 2022',
+      company: 'Kadea-academy',
+      location: 'Kinshasa ',
+      period: '2024 - 2025',
       description: 'Conception et développement d\'une plateforme SaaS de gestion de projets. Implémentation d\'APIs RESTful et d\'interfaces utilisateur modernes.',
-      technologies: ['Vue.js', 'Python', 'Django', 'MongoDB', 'Redis', 'Kubernetes']
+      technologies: ['Adonis.js', 'Python', 'Django', 'MongoDB']
     },
     {
       title: 'Développeur Junior',
-      company: 'Agence Web Pro',
-      location: 'Montreal, QC',
-      period: '2018 - 2020',
+      company: 'kadea-boost',
+      location: 'kinshasa',
+      period: '2022 - 2023',
       description: 'Développement de sites web responsifs et d\'applications mobiles. Collaboration étroite avec les équipes design et marketing.',
-      technologies: ['HTML/CSS', 'JavaScript', 'PHP', 'MySQL', 'React Native', 'Git']
+      technologies: ['HTML/CSS', 'JavaScript','MySQL', 'React Native', 'Git']
     }
   ];
 
