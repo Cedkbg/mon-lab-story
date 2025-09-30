@@ -35,7 +35,7 @@ const AboutSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ingénieur logiciel passionné avec peu d'années d'expérience dans le développement 
+            Je suis Ced Kabongo"Le JEUNE IR" ingénieur en genie logiciel passionné avec peu d'années d'expérience dans le développement 
             d'applications web et mobiles. Je m'efforce constamment d'apprendre et d'adopter 
             les dernières technologies pour créer des solutions innovantes.
           </p>

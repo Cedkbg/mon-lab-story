@@ -29,7 +29,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Je suis Ced Kabongo ingegnieur en genie logiciel et autrement appeler Le JEUNE IR <br />Passionné par le développement d'applications innovantes et performantes. 
+          Passionné par le développement d'applications innovantes et performantes. 
             Spécialisé dans les technologies modernes et l'architecture logicielle.
           </p>
           

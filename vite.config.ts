@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 5173,
   },
+   base: "/mon-lab-story/",
   plugins: [
     react(),
     mode === 'development' &&
