@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
       {/* Animated background */}
       <div className="absolute inset-0 bg-background">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(165_80%_50%_/_0.15)_0%,_transparent_70%)]" />
@@ -49,22 +49,24 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {/* Profile Image with enhanced glow */}
+          {/* Profile Image with enhanced glow - professional spacing */}
           <motion.div 
-            className="mb-10 relative inline-block"
+            className="mb-12 relative inline-block"
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ duration: 1, type: "spring", stiffness: 100 }}
           >
-            <div className="absolute inset-0 bg-accent-gradient rounded-full blur-2xl opacity-60 scale-110 animate-pulse-glow" />
-            <div className="relative">
-              <img 
-                src={profileImage} 
-                alt="Cédric Kabongo - Ingénieur Logiciel" 
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto shadow-image-glow ring-4 ring-primary/50 object-cover relative z-10"
-              />
-              <div className="absolute inset-0 rounded-full bg-accent-gradient opacity-20 animate-gradient-shift" style={{ backgroundSize: '200% 200%' }} />
+            <div className="absolute -inset-4 bg-accent-gradient rounded-full blur-2xl opacity-40 animate-pulse-glow" />
+            <div className="relative p-1.5 rounded-full bg-gradient-to-br from-primary via-accent to-primary">
+              <div className="p-1 rounded-full bg-background">
+                <img 
+                  src={profileImage} 
+                  alt="Cédric Kabongo - Ingénieur Logiciel" 
+                  className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full mx-auto shadow-image-glow object-cover relative z-10"
+                />
+              </div>
             </div>
+            <div className="absolute -inset-2 rounded-full bg-accent-gradient opacity-20 animate-gradient-shift blur-sm" style={{ backgroundSize: '200% 200%' }} />
           </motion.div>
           
           {/* Name with typing effect style */}

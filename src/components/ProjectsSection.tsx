@@ -4,6 +4,12 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Star, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+// Import project images
+import projectEcommerce from '@/assets/project-ecommerce.jpg';
+import projectManagement from '@/assets/project-management.jpg';
+import projectGeolocation from '@/assets/project-geolocation.jpg';
+import projectAnalytics from '@/assets/project-analytics.jpg';
+
 const ProjectsSection = () => {
   const projects = [
     {
@@ -11,6 +17,7 @@ const ProjectsSection = () => {
       description: 'Application complète de commerce électronique avec gestion des commandes, paiements sécurisés et tableau de bord administrateur.',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       color: 'from-primary to-accent',
+      image: projectEcommerce,
       githubUrl: '#',
       liveUrl: '#',
       featured: true
@@ -20,6 +27,7 @@ const ProjectsSection = () => {
       description: 'Outil collaboratif pour la gestion de projets avec suivi du temps, assignation de tâches et reporting avancé.',
       technologies: ['Vue.js', 'Django', 'MongoDB'],
       color: 'from-accent to-primary',
+      image: projectManagement,
       githubUrl: '#',
       liveUrl: '#',
       featured: true
@@ -29,6 +37,7 @@ const ProjectsSection = () => {
       description: 'Service REST API pour la géolocalisation avec intégration de cartes interactives et recherche avancée.',
       technologies: ['Python', 'Django', 'Redis', 'Kubernetes'],
       color: 'from-primary/80 to-accent/80',
+      image: projectGeolocation,
       githubUrl: '#',
       liveUrl: '#',
       featured: false
@@ -38,6 +47,7 @@ const ProjectsSection = () => {
       description: 'Tableau de bord temps réel pour l\'analyse de données avec graphiques interactifs et exportation de rapports.',
       technologies: ['React', 'D3.js', 'Express', 'InfluxDB', 'WebSocket'],
       color: 'from-accent/80 to-primary/80',
+      image: projectAnalytics,
       githubUrl: '#',
       liveUrl: '#',
       featured: false
@@ -82,28 +92,15 @@ const ProjectsSection = () => {
             >
               <Card className="bg-card-gradient shadow-card hover:shadow-glow transition-all duration-500 border-border/30 hover:border-primary/50 h-full overflow-hidden">
                 <CardHeader className="p-0">
-                  {/* Project visual header */}
-                  <div className={`h-48 bg-gradient-to-br ${project.color} relative overflow-hidden`}>
-                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-30" />
+                  {/* Project image header */}
+                  <div className="h-48 relative overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-30`} />
                     
-                    {/* Floating elements */}
-                    <motion.div
-                      className="absolute top-4 right-4 w-20 h-20 rounded-xl bg-white/10 backdrop-blur-sm"
-                      animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
-                      transition={{ duration: 4, repeat: Infinity }}
-                    />
-                    <motion.div
-                      className="absolute bottom-4 left-4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm"
-                      animate={{ y: [0, 10, 0], x: [0, 5, 0] }}
-                      transition={{ duration: 3, repeat: Infinity }}
-                    />
-                    <motion.div
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center"
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                    >
-                      <span className="text-4xl">🚀</span>
-                    </motion.div>
-
                     {/* Featured badge */}
                     {project.featured && (
                       <div className="absolute top-4 left-4">
