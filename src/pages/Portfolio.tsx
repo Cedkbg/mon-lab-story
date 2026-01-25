@@ -30,9 +30,6 @@ const Portfolio = () => {
             © {new Date().getFullYear()} <span className="text-gradient font-semibold">Cédric Kabongo</span>. 
             Tous droits réservés.
           </p>
-          <p className="text-sm text-muted-foreground/60 mt-2">
-            Construit avec ❤️ en utilisant React & Tailwind CSS
-          </p>
         </div>
       </motion.footer>
     </div>
