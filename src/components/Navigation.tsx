@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Shield } from 'lucide-react';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -99,6 +100,24 @@ const Navigation = () => {
                   </Button>
                 </motion.div>
               ))}
+              
+              {/* Admin Link */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+              >
+                <Link to="/auth">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="hover:text-primary hover:bg-primary/10 border border-primary/30"
+                  >
+                    <Shield className="h-4 w-4 mr-1" />
+                    Admin
+                  </Button>
+                </Link>
+              </motion.div>
             </div>
 
             {/* Mobile Menu Button */}
