@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Menu, X, Shield } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -101,11 +102,20 @@ const Navigation = () => {
                 </motion.div>
               ))}
               
-              {/* Admin Link */}
+              {/* Theme Toggle */}
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
+              >
+                <ThemeToggle />
+              </motion.div>
+
+              {/* Admin Link */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
               >
                 <Link to="/auth">
                   <Button
