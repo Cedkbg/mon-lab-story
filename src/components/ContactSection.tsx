@@ -80,6 +80,20 @@ const ContactSection = () => {
 
       if (error) throw error;
 
+      // Send email notification
+      try {
+        await supabase.functions.invoke('send-contact-notification', {
+          body: {
+            name: result.data.name,
+            email: result.data.email,
+            subject: result.data.subject,
+            message: result.data.message
+          }
+        });
+      } catch (emailError) {
+        console.log('Email notification failed, but contact was saved:', emailError);
+      }
+
       setIsSuccess(true);
       toast({
         title: "Message envoyé! ✨",
