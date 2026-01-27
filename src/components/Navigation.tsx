@@ -190,6 +190,21 @@ const Navigation = () => {
                 </Button>
               </motion.div>
             ))}
+            
+            {/* Theme Toggle & Admin in Mobile */}
+            <div className="flex items-center justify-between pt-4 border-t border-border/30 mt-4">
+              <ThemeToggle />
+              <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="hover:text-primary hover:bg-primary/10 border border-primary/30"
+                >
+                  <Shield className="h-4 w-4 mr-1" />
+                  Admin
+                </Button>
+              </Link>
+            </div>
           </div>
         </motion.div>
       </motion.div>
