@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Contacts are readable" ON public.contacts;
